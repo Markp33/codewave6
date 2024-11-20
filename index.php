@@ -16,7 +16,9 @@
 
     <div class="relative h-[20rem] overflow-hidden md:h-[600px]">
         <div class="duration-700 ease-in-out" data-carousel-item>
-            <img src="place.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="eerste image">
+            <img src="place.png" class="absolute block w-full z-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="eerste image">
+            <div className="w-full absolute top-0 left-0 text-center mt-10 z-0">
+    </div>
         </div>
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="place1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="tweedeimage">
