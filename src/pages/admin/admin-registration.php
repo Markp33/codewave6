@@ -21,23 +21,24 @@
     $dotenv->load();
     if (isset($_POST["username"])){
         $username = $_POST["username"];
-        $stmt = $conn->prepare("SELECT * FROM admin WHERE 'username' = '$username'");
+        $stmt = $conn->prepare("SELECT * FROM admin WHERE username = '$username'");
         $stmt->execute();
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         echo "<pre>"; print_r($result);
         if ($result){
             echo "username already exists";
+        } else{
+            $email = $_POST['email'];
+            $password = openssl_encrypt(
+                $_POST['password'], "AES-256-CBC",
+                $_ENV["PASSPHRASE"],
+                $options = 0,
+                $iv = $_ENV["IV_STRING"]
+            );
+            $stmt = $conn->prepare("INSERT INTO admin (username, email, password) VALUES ('$username' , '$email' , '$password')");
+            $stmt->execute();
         }
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = openssl_encrypt(
-        $_POST['password'], "AES-256-CBC",
-        $_ENV["PASSPHRASE"],
-        $options = 0, 
-        $iv = $_ENV["IV_STRING"]
-    );
-    $stmt = $conn->prepare("INSERT INTO admin (username, email, password) VALUES ('$username' , '$email' , '$password')");
-    $stmt->execute();
+    
     }
     ?>
 </body>

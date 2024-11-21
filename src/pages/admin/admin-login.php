@@ -35,7 +35,8 @@
         if ($_POST['password'] == $password){
             session_start();
             $_SESSION['loggedin'] = true;
-            header('Location: ./../cms.php');
+            $_SESSION['user'] = $username;
+            header('Location: ./../cms/cms.php');
         } else {
             echo "false, terminate now";
         }
