@@ -2,14 +2,9 @@
 include "./../admin/auth.php"; 
 include "./../../database/connect.php";
 ?>
-<form method="post" action="">
-            <select name="type">
-                <option value="update">Update</option>
-                <option value="insert">Insert</option>
-                <option value="delete">Delete</option>
-            </select>
-            <input type="submit" value="send">
-</form>
+<a href="./update.php">Update</a>
+<a href="./insert.php">Insert</a>
+<a href="./delete.php">Delete</a>
 <?php
 $stmt = $conn->prepare("SELECT * FROM `cms`");
 $stmt->execute();
