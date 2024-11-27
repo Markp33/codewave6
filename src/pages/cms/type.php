@@ -34,8 +34,3 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     ?>
 </table>
-<?php
-if (isset($_POST["type"])){
-    header("Location: ./" . $_POST["type"] . ".php");
-}
-?>
