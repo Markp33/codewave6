@@ -36,7 +36,7 @@
             session_start();
             $_SESSION['loggedin'] = true;
             $_SESSION['user'] = $username;
-            header('Location: ./../cms/cms.php');
+            header('Location: ./../cms/type.php');
         } else {
             echo "false, terminate now";
         }

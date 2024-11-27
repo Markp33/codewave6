@@ -2,3 +2,4 @@ node_modules
 vendor
 src/img/cms-img/*
 !src/img/cms-img/
+temp.*
