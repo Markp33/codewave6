@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+<footer class="bg-gray-800 text-gray-400 py-6">
+    <div class="container mx-auto px-4 text-center">
+        <p class="text-sm"> Your Company. All rights reserved.</p>
+        <div class="mt-4">
+            <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+            <a href="#" class="text-gray-400 hover:text-white mx-2">Contact Us</a>
+        </div>
+    </div>
+</footer>
+</body>
+=======
 <footer class="bg-black text-white rounded-t-3xl snap-always snap-center font-body">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0 py-24">
 
@@ -47,4 +60,5 @@
 </div>
 </body>
 
+>>>>>>> 51ebdf20d4b516b483a06cb58b829888826eaa3e
 </html>

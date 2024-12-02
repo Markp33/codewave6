@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+<?php include_once __DIR__ . '/../header.php'; ?>
+=======
 <?php include_once __DIR__ . '/header.php'; ?>
+<?php //include_once 'header.php'; ?>
 <?php //include_once __DIR__ . '/footer.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,9 +49,9 @@
 </head>
 
 <body class="bg-gray-100">
-    <div class="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="container mx-auto p-4 py-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <?php
-        $divs = [gi
+        $divs = [
             [
                 'text' => 'Teamkompas. Door samen de bedoeling en de leidende principes te bepalen geven we uw team het kompas voor de toekomst',
                 'img' => 'https://via.placeholder.com/150'
@@ -133,3 +137,4 @@
 </body>
 
 </html>
+>>>>>>> 51ebdf20d4b516b483a06cb58b829888826eaa3e
