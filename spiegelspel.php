@@ -3,7 +3,7 @@
 
     <!-- Spiegelconcept Section -->
     <div class="section flex flex-col items-center justify-center bg-gray-50 text-gray-800 px-4 py-10 md:py-20" id="section">
-        <h1 class="text-4xl md:text-5xl font-semibold italic text-gray-600 text-center">Spiegelconcept</h1>
+        <h1 class="text-4xl md:text-5xl font-semibold italic text-gray-600 text-center pt-12">Spiegelconcept</h1>
         <div class="mt-6 md:mt-10 max-w-3xl text-left">
             <p class="text-base md:text-lg mb-4 md:mb-5">
                 Met het Spiegelconcept geeft u invulling aan een lerende organisatie. Met deze aanpak spiegel je je als professional, team en organisatie systematisch aan de hoogste kwaliteitsstandaarden en de behoeften vanuit je omgeving.
@@ -187,6 +187,18 @@
                 hiddenText.style.display = 'block';
                 button.textContent = 'Lees minder';
             }
+        });
+    });
+
+    // Reset de zichtbaarheid van elementen bij wijziging van de schermgrootte
+    window.addEventListener('resize', () => {
+        const isDesktop = window.innerWidth >= 768;
+        document.querySelectorAll('.hidden-text').forEach(hiddenText => {
+            hiddenText.style.display = isDesktop ? 'block' : 'none';
+        });
+        document.querySelectorAll('.read-more-btn').forEach(button => {
+            button.style.display = isDesktop ? 'none' : 'inline-block';
+            button.textContent = 'Lees meer';
         });
     });
 </script>
