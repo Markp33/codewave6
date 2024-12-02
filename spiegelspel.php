@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div id="fullpage">
     <?php include_once 'header.php'; ?>
 
@@ -202,3 +203,19 @@
         });
     });
 </script>
+=======
+<?php include_once __DIR__ . '/header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+>>>>>>> 51ebdf20d4b516b483a06cb58b829888826eaa3e

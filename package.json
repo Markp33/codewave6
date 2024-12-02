@@ -1,5 +1,12 @@
 {
   "devDependencies": {
+<<<<<<< HEAD
+    "tailwindcss": "^3.4.15"
+=======
     "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "openssl": "^2.0.0"
+>>>>>>> 569b68df3e431c0e005dd5eb2d1a7ea860541894
   }
 }
