@@ -7,24 +7,28 @@
 <body class="text-gray-700">
 
     <div class="flex flex-col lg:flex-row justify-center items-center min-h-screen gap-12 p-4">
-        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-            <h1 class="text-2xl font-bold text-gray-800 m-8 ">Contact opnemen</h1>
-            <form>
-                <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Naam</label>
-                    <input type="text" id="name" name="name" class="mt-1 block w-full p-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Naam">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" class="mt-1 block w-full p-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Email">
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-sm font-medium text-gray-700">Bericht</label>
-                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full p-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Bericht"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Verstuur</button>
-            </form>
-        </div>
+        <form
+            action="https://formspree.io/f/xdkoydwa"
+            method="POST">
+            <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+                <h1 class="text-2xl font-bold text-gray-800 m-8 ">Contact opnemen</h1>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Naam</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full p-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Naam">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full p-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Bericht</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full p-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Bericht"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Verstuur</button>
+                </form>
+            </div>
+        </form>
 
         <div class="w-full max-w-lg shadow-lg">
             <iframe
