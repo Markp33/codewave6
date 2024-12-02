@@ -1,10 +1,10 @@
 <?php include_once __DIR__ . '/header.php'; ?>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/output.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="./src/img/favicon-8.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./src/img/favicon-8.ico">
 </head>
 
 <body>
@@ -100,7 +100,7 @@
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem]">
                         <h2 class="text-3xl md:text-5xl font-bold mt-2">Over onze Dienstregeling</h2>
                         <p class="mt-6 md:mt-[5rem] text-lg md:text-xl">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem excepturi asperiores ratione nemo quae animi, pariatur quas soluta, praesentium necessitatibus deserunt ducimus maiores autem quaerat magnam dolorum molestiae? Reiciendis, quam.
+                            Lorem ipsum dolor sitt, consectetur adipisicing elit. Exercitationem excepturi asperiores ratione nemo quae animi, pariatur quas soluta, praesentium necessitatibus deserunt ducimus maiores autem quaerat magnam dolorum molestiae? Reiciendis, quam.
                         </p>
                         <div class="bg-db text-white text-center px-4 py-2 rounded hover:bg-blue-600 mt-10 w-[8rem]">
                             <a href="./dienst.php">Lees meer</a>
