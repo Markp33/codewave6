@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-<?php include_once 'header.php'; ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/output.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="./src/img/favicon-8.ico">
-</head>
-
-<body>
-  <h1 class="text-3xl text-center mt-8">Welcome to CodeWave!</h1>
-</body>
-
-</html>
-<?php include_once 'footer.php'; ?>
-=======
 <?php include_once __DIR__ . '/header.php'; ?>
 
 <head>
@@ -33,32 +14,34 @@
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
                 <div class="relative h-[18rem] overflow-hidden md:h-[600px]">
 
-                    <div class="duration-700 ease-in-out " data-carousel-item>
-
-                        <img src="place.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="1 Image">
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="place.png" data-mobile-src="vplace.png"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="1 Image">
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 space-y-2">
                             <h2 class="text-5xl font-bold uppercase">Focus6</h2>
                             <p class="text-xl">Focus op succes!</p>
                         </div>
-
                     </div>
-                    <div class="duration-700 ease-in-out hidden" data-carousel-item>
 
-                        <img src="place1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="2 Image">
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="place1.png" data-mobile-src="vplace2.png"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="1 Image">
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 space-y-2">
                             <h2 class="text-5xl font-bold uppercase">Focus6</h2>
                             <p class="text-xl">Focus op succes!</p>
                         </div>
-
                     </div>
-                    <div class="duration-700 ease-in-out hidden" data-carousel-item>
 
-                        <img src="place2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="3 Image">
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="place2.png" data-mobile-src="vplace3.png"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="1 Image">
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 space-y-2">
                             <h2 class="text-5xl font-bold uppercase">Focus6</h2>
                             <p class="text-xl">Focus op succes!</p>
                         </div>
-
                     </div>
                 </div>
 
@@ -99,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="snap-center h-screen flex items-center justify-center px-4 py-10 md:py-0 md:px-0 bg-gray-200">
+            <div class="snap-center h-screen flex items-center justify-center w-full px-4 py-10 md:py-0 md:px-0 bg-gray-200">
                 <div class="flex flex-col-reverse md:flex-row md:space-x-[20rem]">
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem] bg-black rounded-2xl shadow-lg md:mt-0 mt-6"></div>
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem]">
@@ -129,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="snap-center h-screen flex items-center justify-center px-4 py-10 md:py-0 md:px-0 bg-gray-200">
+            <div class="snap-center h-screen flex items-center justify-center w-full px-4 py-10 md:py-0 md:px-0 bg-gray-200">
                 <div class="flex flex-col-reverse md:flex-row md:space-x-[20rem]">
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem] bg-black rounded-2xl shadow-lg md:mt-0 mt-6"></div>
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem]">
@@ -194,7 +177,31 @@
                 updateSlides();
                 startAutoSlide();
             });
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const updateImageSources = () => {
+                    const isMobile = window.innerWidth < 768; // Define the mobile breakpoint
+                    const images = document.querySelectorAll("[data-mobile-src]");
+
+                    images.forEach(img => {
+                        const desktopSrc = img.getAttribute("src");
+                        const mobileSrc = img.getAttribute("data-mobile-src");
+
+                        // Swap the src attribute based on screen size
+                        if (isMobile) {
+                            img.setAttribute("src", mobileSrc);
+                        } else {
+                            img.setAttribute("src", desktopSrc);
+                        }
+                    });
+                };
+
+                // Call the function on page load
+                updateImageSources();
+
+                // Update images on window resize
+                window.addEventListener("resize", updateImageSources);
+            });
         </script>
 
         <?php include_once 'footer.php'; ?>
->>>>>>> 51ebdf20d4b516b483a06cb58b829888826eaa3e
