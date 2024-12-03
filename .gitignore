@@ -3,3 +3,5 @@ vendor
 src/img/cms-img/*
 !src/img/cms-img/
 temp.*
+dienstverleening
+other_photos
