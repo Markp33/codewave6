@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<?php include_once __DIR__ . '/../header.php'; ?>
-=======
 <?php include_once __DIR__ . '/header.php'; ?>
 <?php //include_once __DIR__ . '/footer.php'; ?>
 <!DOCTYPE html>
@@ -136,4 +133,3 @@
 </body>
 
 </html>
->>>>>>> 51ebdf20d4b516b483a06cb58b829888826eaa3e

@@ -158,7 +158,6 @@
     <!-- Footer -->
     <?php include_once 'footer.php'; ?>
 </div>
-</body>
 
 <!-- CSS -->
 <style>
@@ -204,3 +203,5 @@
         });
     });
 </script>
+
+</body>

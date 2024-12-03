@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-<?php include_once __DIR__ . '/../header.php'; ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/output.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-=======
 <?php include_once __DIR__ . '/header.php'; ?>
 
 <head>
@@ -57,5 +42,4 @@
     <?php include_once __DIR__ . '/footer.php'; ?>
 </body>
 
->>>>>>> 51ebdf20d4b516b483a06cb58b829888826eaa3e
 </html>
