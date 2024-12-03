@@ -1,12 +1,12 @@
-<<<<<<< HEAD
 <div id="fullpage">
     <?php include_once 'header.php'; ?>
 
     <!-- Spiegelconcept Section -->
-    <div class="section flex flex-col items-center justify-center bg-gray-50 text-gray-800 px-4 py-10 md:py-20" id="section">
-        <h1 class="text-4xl md:text-5xl font-semibold italic text-gray-600 text-center pt-12">Spiegelconcept</h1>
+
+    <div class=" section flex flex-col items-center justify-center bg-gray-50 text-gray-800 px-4 py-10 md:py-20 font-body" id="section">
+        <h1 class="text-4xl md:text-5xl italic text-gray-600 text-center pt-12">Spiegelconcept</h1>
         <div class="mt-6 md:mt-10 max-w-3xl text-left">
-            <p class="text-base md:text-lg mb-4 md:mb-5">
+            <p class="text-base font-body md:text-lg mb-4 md:mb-5">
                 Met het Spiegelconcept geeft u invulling aan een lerende organisatie. Met deze aanpak spiegel je je als professional, team en organisatie systematisch aan de hoogste kwaliteitsstandaarden en de behoeften vanuit je omgeving.
             </p>
             <!-- Uitklapbare tekst -->
@@ -19,13 +19,13 @@
                 </p>
             </div>
             <!-- Lees meer knop -->
-            <button class="read-more-btn text-blue-500 font-semibold">Lees meer</button>
+            <button class="read-more-btn text-blue-500 font-body">Lees meer</button>
         </div>
     </div>
 
     <!-- Samen Sturen Section -->
     <div class="section flex flex-col items-center justify-center bg-gray-200 text-gray-800 px-4 py-10 md:py-20" id="section5">
-        <h1 class="text-4xl md:text-5xl font-semibold italic text-gray-600 text-center mb-8">Samen sturen</h1>
+        <h1 class="text-4xl md:text-5xl font-body italic text-gray-600 text-center mb-8">Samen sturen</h1>
         <div class="flex flex-col md:flex-row items-center max-w-4xl mx-auto gap-6">
             <!-- Placeholder for Image -->
             <div class="flex-shrink-0">
@@ -42,18 +42,18 @@
                     </p>
                 </div>
                 <!-- Lees meer knop -->
-                <button class="read-more-btn text-blue-500 font-semibold">Lees meer</button>
+                <button class="read-more-btn text-blue-500 font-body">Lees meer</button>
             </div>
         </div>
     </div>
 
     <!-- Aanpak Section -->
     <div class="section bg-gray-50 text-gray-800 flex flex-col items-center justify-center px-4 py-10 md:py-20">
-        <h1 class="text-4xl md:text-5xl font-semibold italic text-gray-600 text-center mb-10">Aanpak</h1>
+        <h1 class="text-4xl md:text-5xl font-body italic text-gray-600 text-center mb-10">Aanpak</h1>
         <div class="flex flex-col md:flex-row gap-6 max-w-5xl mx-auto">
             <!-- Box 1 -->
             <div class="flex-1 bg-white p-6 shadow-lg rounded-md">
-                <h2 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Het TeamKompas</h2>
+                <h2 class="text-xl md:text-2xl font-body text-gray-700 mb-4">Het TeamKompas</h2>
                 <p>
                     Om de koers van het team te bepalen starten we door samen met het team een <strong>TeamKompas</strong> te maken.
                     De basis hiervoor zijn de overtuigingen en leidende principes van het team. Het Teamkompas geeft het team koers
@@ -64,7 +64,7 @@
             </div>
             <!-- Box 2 -->
             <div class="flex-1 bg-white p-6 shadow-lg rounded-md">
-                <h2 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Het Teamplan</h2>
+                <h2 class="text-xl md:text-2xl font-body text-gray-700 mb-4">Het Teamplan</h2>
                 <p>
                     In het <strong>Teamplan</strong> legt het team de ambities voor de komende jaren vast, door haar doelen te bepalen.
                     Aan deze doelen koppelt het team ‘eigenaren’. Zij dragen zorg voor de realisatie van deze doelen.
@@ -80,7 +80,7 @@
                     </p>
                 </div>
                 <!-- Lees meer knop -->
-                <button class="read-more-btn text-blue-500 font-semibold">Lees meer</button>
+                <button class="read-more-btn text-blue-500 font-body">Lees meer</button>
             </div>
             <!-- Box 3 -->
             <div class="flex-1 bg-white p-6 shadow-lg rounded-md">
@@ -203,19 +203,5 @@
         });
     });
 </script>
-=======
-<?php include_once __DIR__ . '/header.php'; ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-</head>
-<body>
-    
+
 </body>
-</html>
->>>>>>> 51ebdf20d4b516b483a06cb58b829888826eaa3e

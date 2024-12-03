@@ -43,6 +43,7 @@
         <p>&copy; 2024 Spiegespel. Alle rechten voorbehouden.</p>
     </div>
     </div>
+<<<<<<< HEAD
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const currentPath = window.location.pathname.split("/").pop();
@@ -53,6 +54,8 @@
             });
         });
     </script>
+=======
+>>>>>>> 3cb0276ce7edff2ce148b281f82f46341eb571b1
 </footer>
 
 

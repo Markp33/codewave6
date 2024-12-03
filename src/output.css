@@ -1098,11 +1098,14 @@ video {
   --tw-bg-opacity: 0.75;
 }
 
+<<<<<<< HEAD
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+=======
+>>>>>>> 3cb0276ce7edff2ce148b281f82f46341eb571b1
 .p-2 {
   padding: 0.5rem;
 }
@@ -1369,10 +1372,13 @@ video {
     height: 600px;
   }
 
+<<<<<<< HEAD
   .md\:h-auto {
     height: auto;
   }
 
+=======
+>>>>>>> 3cb0276ce7edff2ce148b281f82f46341eb571b1
   .md\:w-1\/3 {
     width: 33.333333%;
   }
