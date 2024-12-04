@@ -3,7 +3,6 @@
 <head>
     <link href="./src/output.css" rel="stylesheet">
     <link href=" spiegelspel.css" rel="stylesheet">
-
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -161,7 +160,6 @@
             </p>
         </div>
     </div>
-
     <script src="spiegelspel.js"></script>
 </div>
 
