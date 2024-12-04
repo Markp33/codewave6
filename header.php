@@ -14,7 +14,7 @@
         <div class="container mx-auto flex items-center justify-between p-4">
 
             <a href="index.php" class="flex-shrink-0">
-                <img class="h-10" src="" alt="Logo">
+                <img class="h-10 ml-10" src="Logo.png" alt="Logo">
             </a>
 
             <button id="menuButton" class="block md:hidden focus:outline-none">
@@ -50,33 +50,5 @@
     </header>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuButton = document.getElementById('menuButton');
-            const dropdownMenu = document.getElementById('dropdownMenu');
-            const menu = document.getElementById('menu');
-
-            menu.classList.add('hidden');
-            dropdownMenu.classList.add('hidden');
-
-            menuButton.addEventListener('click', () => {
-                dropdownMenu.classList.toggle('hidden');
-            });
-
-            window.addEventListener('click', (e) => {
-                if (!dropdownMenu.contains(e.target) && !menuButton.contains(e.target)) {
-                    dropdownMenu.classList.add('hidden');
-                }
-            });
-        });
-
-
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const currentPath = window.location.pathname.split("/").pop();
-            document.querySelectorAll("nav a").forEach((link) => {
-                if (link.getAttribute("href") === currentPath) {
-                    link.classList.add("text-lb");
-                }
-            });
-        });
+        <?php include_once __DIR__ . '/index.php'; ?>
     </script>

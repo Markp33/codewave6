@@ -26,6 +26,10 @@ module.exports = {
         body: '#6699CC',
         db: '#000C66',
         lb: '#0000ff',
+        gold: '#D3B87A',
+        lavender: '#E6E6FA',
+        red: '#B22222',
+        
       },
       fontFamily: {
         body: ['"calibri-light"'],
