@@ -3,7 +3,6 @@
 <head>
     <link href="./src/output.css" rel="stylesheet">
     <link href=" spiegelspel.css" rel="stylesheet">
-
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <div id="fullpage">
@@ -111,12 +110,12 @@
                         Het Spiegelspel kan kleinschalig worden toegepast, bijvoorbeeld voor één team of een aantal pilot teams. Vanuit zo'n kleinschalige startopstelling kan het Spiegelconcept opgeschaald worden naar een organisatiebreed toepassing.
                     </p>
                     <div class="hidden-text">
-                        <p class="text-sm md:text-base mb-4 md">
+                        <p class=" md:text-base mb-4 md">
                             Zij kan zich hierin door ons laten begeleiden of via een train-de-trainer constructie de implementatie zelf ter hand nemen. Bij een organisatiebrede toepassing van het SpiegelconceptIn doorloop je een vergelijkbare aanpak (als bij de teams) maar dan op concernniveau. De speerpunten van het concern geven dan richting aan de invulling van de teamplannen en de analyse van de teamplannen levert input voor het concernplan, in de vorm van 'rode draden' voor verbetering en ontwikkeling.
                         </p>
                     </div>
                     <!-- Lees meer knop -->
-                    <button class="read-more-btn text-blue-500 font-semibold">Lees meer</button>
+                    <button class="read-more-btn text-blue-500 ">Lees meer</button>
                 </div>
                 <div class="md:w-1/3">
                     <img src="https://placehold.co/600x400.png" alt="Placeholder afbeelding 1" class="w-full h-auto rounded shadow-lg">
@@ -128,7 +127,7 @@
                     <img src="https://placehold.co/600x400.png" alt="Placeholder afbeelding 2" class="w-full h-auto rounded shadow-lg">
                 </div>
                 <div class="md:w-2/3">
-                    <h2 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Analyse en evaluatie in 3 jaar cyclus</h2>
+                    <h2 class="text-xl md:text-2xl  text-gray-700 mb-4">Analyse en evaluatie in 3 jaar cyclus</h2>
                     <p>
                         Jaarlijks maakt het team een nieuw teamplan. De zelfevaluatie en het klantenonderzoek komen jaarlijks terug. De andere analyse & evaluatie instrumenten worden gespreid over 3 jaar uitgevoerd.Eventueel kunnen alternatieve audits of evaluaties worden ingepland. Hiermee kan aangesloten worden op de 3 jarige certificeringscyclus.
                     </p>
@@ -137,7 +136,7 @@
 
             <div class="flex flex-col md:flex-row gap-8 items-center">
                 <div class="md:w-2/3">
-                    <h2 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Teamplan cyclus per jaar</h2>
+                    <h2 class="text-xl md:text-2xl  text-gray-700 mb-4">Teamplan cyclus per jaar</h2>
                     <p>
                         Op teamniveau geeft het team invulling aan 'Samen sturen' middels een wekelijkse 'check-in', een maandelijkse 'check-out' en een 'refresh' per kwartaal. In een weekstart vindt de check-in plaats: het team komt in actie. Bij de check-up kijkt het team hoe de kritische processen lopen en of bijsturing nodig is. Bij de Refresh kijkt het team opnieuw naar het teamplan en bepaalt het team of zij nog de 'goede dingen' doet.
                     </p>
@@ -160,7 +159,6 @@
             </p>
         </div>
     </div>
-
     <script src="spiegelspel.js"></script>
 </div>
 

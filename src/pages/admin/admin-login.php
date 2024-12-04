@@ -17,10 +17,12 @@
     if ($_SESSION['loggedin']){
         header("location: ../cms/type.php");
     }
-    require $_SERVER['DOCUMENT_ROOT'] . '/focus6/codewave6/vendor/autoload.php';
+    require __DIR__ . '/../../../vendor/autoload.php';  // Adjusted relative path
+
     use Dotenv\Dotenv;
-    $dotenv = Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/focus6/codewave6/');
-    $dotenv->load(); 
+    
+    $dotenv = Dotenv::createImmutable(__DIR__ . '/../../../');
+    $dotenv->load();
     if (isset($_POST["username"])){
         include "./../../database/connect.php";
         $username = $_POST['username'];

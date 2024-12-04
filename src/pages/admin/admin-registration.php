@@ -1,3 +1,6 @@
+<?php
+include "./auth.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +18,11 @@
     <?php
     // include "./encrypt_keys.php";
     include "./../../database/connect.php";
-    require $_SERVER['DOCUMENT_ROOT'] . '/focus6/codewave6/vendor/autoload.php';
+    require __DIR__ . '/../../../vendor/autoload.php';  // Adjusted relative path
+
     use Dotenv\Dotenv;
-    $dotenv = Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/focus6/codewave6/');
+    
+    $dotenv = Dotenv::createImmutable(__DIR__ . '/../../../');
     $dotenv->load();
     if (isset($_POST["username"])){
         $username = $_POST["username"];
