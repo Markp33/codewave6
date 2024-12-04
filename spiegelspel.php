@@ -1,6 +1,11 @@
-<div id="fullpage">
-    <?php include_once 'header.php'; ?>
+<?php include_once 'header.php'; ?>
 
+<head>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<div id="fullpage">
     <!-- Spiegelconcept Section -->
 
     <div class=" section flex flex-col items-center justify-center bg-gray-50 text-gray-800 px-4 py-10 md:py-20 font-body" id="section">
@@ -156,7 +161,6 @@
     </div>
 
     <!-- Footer -->
-    <?php include_once 'footer.php'; ?>
 </div>
 
 <!-- CSS -->
@@ -204,4 +208,4 @@
     });
 </script>
 
-</body>
+<?php include_once 'footer.php'; ?>
