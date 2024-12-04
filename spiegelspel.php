@@ -2,8 +2,11 @@
 
 <head>
     <link href="./src/output.css" rel="stylesheet">
+    <link href=" spiegelspel.css" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <div id="fullpage">
     <!-- Spiegelconcept Section -->
 
@@ -88,7 +91,7 @@
             </div>
             <!-- Box 3 -->
             <div class="flex-1 bg-white p-6 shadow-lg rounded-md">
-                <h2 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Spiegelspel, Klantarena, Stakeholders- en Omgevingsanalyse</h2>
+                <h2 class="text-xl md:text-2xl text-gray-700 mb-4">Spiegelspel, Klantarena, Stakeholders- en Omgevingsanalyse</h2>
                 <p>
                     Naast het Team Kompas en het Teamplan staan 4 workshops centraal. In deze workshops helpen we de teams
                     begeleiden om zelf interne en externe analyses uit te voeren op hun werkterrein.Het <strong>Spiegelspel</strong> is een zelfevaluatie (audit) waarbij het team haar eigen functioneren in de vorm
@@ -101,7 +104,7 @@
 
     <!-- Implementatie Section -->
     <div class="section bg-gray-200 text-gray-800 flex flex-col items-center justify-center px-4 py-10 md:py-20">
-        <h1 class="text-4xl md:text-5xl font-semibold italic text-gray-600 text-center mb-12">Implementatie</h1>
+        <h1 class="text-4xl md:text-5xl  italic text-gray-600 text-center mb-12">Implementatie</h1>
         <div class="space-y-12 max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row gap-8 items-center">
                 <div class="md:w-2/3">
@@ -149,7 +152,7 @@
 
     <!-- Borging en certificering Section -->
     <div class="section flex flex-col items-center justify-center bg-gray-100 text-gray-800 px-4 py-10 md:py-20" id="section">
-        <h1 class="text-4xl md:text-5xl font-semibold italic text-gray-600 text-center mb-8">Borging en certificering</h1>
+        <h1 class="text-4xl md:text-5xl  italic text-gray-600 text-center mb-8">Borging en certificering</h1>
         <div class="max-w-3xl">
             <p class="text-sm md:text-base mb-4">
                 Indien uw organisatie aan de slag gaat met het Spiegelconcept, kunt u, als u dat wenst, ook voldoen aan de certificeringseisen van de ISO 9001 (of HKZ).
@@ -159,53 +162,8 @@
         </div>
     </div>
 
+    <script src="spiegelspel.js"></script>
 </div>
-
-<!-- CSS -->
-<style>
-    .hidden-text {
-        display: none;
-    }
-
-    @media (min-width: 768px) {
-        .hidden-text {
-            display: block;
-        }
-
-        .read-more-btn {
-            display: none;
-        }
-    }
-</style>
-
-<!-- JavaScript -->
-<script>
-    document.querySelectorAll('.read-more-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const hiddenText = button.previousElementSibling;
-            if (hiddenText.style.display === 'block') {
-                hiddenText.style.display = 'none';
-                button.textContent = 'Lees meer';
-            } else {
-                hiddenText.style.display = 'block';
-                button.textContent = 'Lees minder';
-            }
-        });
-    });
-
-    // Reset de zichtbaarheid van elementen bij wijziging van de schermgrootte
-    window.addEventListener('resize', () => {
-        const isDesktop = window.innerWidth >= 768;
-        document.querySelectorAll('.hidden-text').forEach(hiddenText => {
-            hiddenText.style.display = isDesktop ? 'block' : 'none';
-        });
-        document.querySelectorAll('.read-more-btn').forEach(button => {
-            button.style.display = isDesktop ? 'none' : 'inline-block';
-            button.textContent = 'Lees meer';
-        });
-    });
-</script>
-
 
 <?php include_once 'footer.php'; ?>
 

@@ -1,0 +1,13 @@
+.hidden-text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hidden-text {
+    display: block;
+  }
+
+  .read-more-btn {
+    display: none;
+  }
+}
