@@ -5,7 +5,6 @@
     <link href=" spiegelspel.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <div id="fullpage">
     <!-- Spiegelconcept Section -->
 

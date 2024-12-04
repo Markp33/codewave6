@@ -10,9 +10,9 @@
 <body>
 
     <div class="snap-y snap-mandatory overflow-y-scroll h-screen scroll-smooth">
-        <div class="snap-start snap-always">
-            <div id="default-carousel" class="relative w-full" data-carousel="slide">
-                <div class="relative h-[18rem] overflow-hidden md:h-[600px]">
+        <div class="snap-start snap-always ">
+            <div id="default-carousel" class="relative w-full h-screen md:h-[600px] bg-gray-500" data-carousel="slide">
+                <div class="relative h-full overflow-hidden md:h-[600px]">
 
                     <div class="duration-700 ease-in-out" data-carousel-item>
                         <img src="place.png" data-mobile-src="vplace.png"
@@ -135,73 +135,7 @@
 
 
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-
-
-                const items = document.querySelectorAll("[data-carousel-item]");
-                const prevButton = document.querySelector("[data-carousel-prev]");
-                const nextButton = document.querySelector("[data-carousel-next]");
-                let currentPosition = 0;
-                let autoSlideInterval;
-
-                const updateSlides = () => {
-                    items.forEach((item, index) => {
-                        item.classList.toggle("hidden", index !== currentPosition);
-                    });
-                };
-
-                const showNextSlide = () => {
-                    currentPosition = (currentPosition + 1) % items.length;
-                    updateSlides();
-                };
-
-                const showPrevSlide = () => {
-                    currentPosition = (currentPosition - 1 + items.length) % items.length;
-                    updateSlides();
-                };
-
-                prevButton.addEventListener("click", () => {
-                    clearInterval(autoSlideInterval);
-                    showPrevSlide();
-                });
-
-                nextButton.addEventListener("click", () => {
-                    clearInterval(autoSlideInterval);
-                    showNextSlide();
-                });
-
-                const startAutoSlide = () => {
-                    autoSlideInterval = setInterval(showNextSlide, 4000);
-                };
-
-                updateSlides();
-                startAutoSlide();
-            });
-
-            document.addEventListener("DOMContentLoaded", () => {
-                const updateImageSources = () => {
-                    const isMobile = window.innerWidth < 768; // Define the mobile breakpoint
-                    const images = document.querySelectorAll("[data-mobile-src]");
-
-                    images.forEach(img => {
-                        const desktopSrc = img.getAttribute("src");
-                        const mobileSrc = img.getAttribute("data-mobile-src");
-
-                        // Swap the src attribute based on screen size
-                        if (isMobile) {
-                            img.setAttribute("src", mobileSrc);
-                        } else {
-                            img.setAttribute("src", desktopSrc);
-                        }
-                    });
-                };
-
-                // Call the function on page load
-                updateImageSources();
-
-                // Update images on window resize
-                window.addEventListener("resize", updateImageSources);
-            });
+            <?php include_once __DIR__ . '/index.js'; ?>
         </script>
 
         <?php include_once 'footer.php'; ?>
