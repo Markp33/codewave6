@@ -1,3 +1,9 @@
+<?php include_once __DIR__ . '/header.php'; ?>
+
+<head>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
 <?php include_once 'header.php'; ?>
 
 <head>
@@ -160,7 +166,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
 </div>
 
 <!-- CSS -->
@@ -208,4 +213,7 @@
     });
 </script>
 
+
 <?php include_once 'footer.php'; ?>
+
+</body>

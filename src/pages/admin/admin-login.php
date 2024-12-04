@@ -13,6 +13,10 @@
     </form>
     <?php
     // include "./encrypt_keys.php";
+    session_start();
+    if ($_SESSION['loggedin']){
+        header("location: ../cms/type.php");
+    }
     require $_SERVER['DOCUMENT_ROOT'] . '/focus6/codewave6/vendor/autoload.php';
     use Dotenv\Dotenv;
     $dotenv = Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/focus6/codewave6/');

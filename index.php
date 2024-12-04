@@ -10,9 +10,9 @@
 <body>
 
     <div class="snap-y snap-mandatory overflow-y-scroll h-screen scroll-smooth">
-        <div class="snap-start snap-always">
-            <div id="default-carousel" class="relative w-full" data-carousel="slide">
-                <div class="relative h-[18rem] overflow-hidden md:h-[600px]">
+        <div class="snap-start snap-always ">
+            <div id="default-carousel" class="relative w-full h-screen md:h-[600px] bg-gray-500" data-carousel="slide">
+                <div class="relative h-full overflow-hidden md:h-[600px]">
 
                     <div class="duration-700 ease-in-out" data-carousel-item>
                         <img src="place.png" data-mobile-src="vplace.png"
