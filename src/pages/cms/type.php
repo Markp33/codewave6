@@ -5,6 +5,7 @@ include "./../../database/connect.php";
 <a href="./update.php">Update</a>
 <a href="./insert.php">Insert</a>
 <a href="./delete.php">Delete</a>
+<a href="./../../../index.php">home</a>
 <?php
 $stmt = $conn->prepare("SELECT * FROM `cms`");
 $stmt->execute();
