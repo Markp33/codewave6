@@ -69,26 +69,26 @@
         </div>
 
         <div class="flex flex-col items-center space-y-[5rem] my-[15rem]">
-
+            <!-- Focus6 -->
             <div class="snap-center h-screen flex items-center justify-center px-4 py-0 md:py-0 md:px-0">
                 <div class="flex flex-col md:flex-row md:space-x-[20rem]">
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem]">
                         <h2 class="text-3xl md:text-5xl font-bold mt-2">Focus6</h2>
                         <p class="mt-6 md:mt-[5rem] text-lg md:text-xl">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem excepturi asperiores ratione nemo quae animi, pariatur quas soluta, praesentium necessitatibus deserunt ducimus maiores autem quaerat magnam dolorum molestiae? Reiciendis, quam.
+                            Focus6 biedt met haar Spiegelconcept een verfrissende en activerende aanpak om te werken aan de ontwikkeling van de lerende organisatie. Het concept is in te zetten op teamniveau en snel op te schalen naar organisatieniveau. Alles is in de praktijk ontwikkeld en toegepast. We geloven in de kracht van teams. In onze optiek onderscheidt een team zich als het goed samenwerkt, leert van ervaringen en innoveert om steeds beter te presteren.
                         </p>
                     </div>
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem] bg-black rounded-2xl shadow-lg md:mt-0 mt-6"></div>
                 </div>
             </div>
-
+            <!-- Spiegelspel -->
             <div class="snap-center h-screen flex items-center justify-center w-full px-4 py-10 md:py-0 md:px-0 bg-gray-200">
                 <div class="flex flex-col-reverse md:flex-row md:space-x-[20rem]">
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem] bg-black rounded-2xl shadow-lg md:mt-0 mt-6"></div>
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem]">
                         <h2 class="text-3xl md:text-5xl font-bold mt-2">Spiegelspel</h2>
                         <p class="mt-6 md:mt-[5rem] text-lg md:text-xl">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem excepturi asperiores ratione nemo quae animi, pariatur quas soluta, praesentium necessitatibus deserunt ducimus maiores autem quaerat magnam dolorum molestiae? Reiciendis, quam.
+                            Met het Spiegelconcept geeft u invulling aan een lerende organisatie. Met deze aanpak spiegel je je als professional, team en organisatie systematisch aan de hoogste kwaliteitsstandaarden en de behoeften vanuit je omgeving. Je gebruikt de leerpunten die hieruit naar voren komen om je dienstverlening te ontwikkelen.
                         </p>
                         <div class="bg-db text-white text-center px-4 py-2 rounded hover:bg-blue-600 mt-10 w-[8rem]">
                             <a href="./spiegelspel.php">Lees meer</a>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Over onze Dienstregeling -->
             <div class="snap-center h-screen flex items-center justify-center px-4 py-10 md:py-0 md:px-0">
                 <div class="flex flex-col md:flex-row md:space-x-[20rem]">
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem]">
@@ -111,7 +111,7 @@
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem] bg-black rounded-2xl shadow-lg md:mt-0 mt-6"></div>
                 </div>
             </div>
-
+            <!-- Contact -->
             <div class="snap-center h-screen flex items-center justify-center w-full px-4 py-10 md:py-0 md:px-0 bg-gray-200">
                 <div class="flex flex-col-reverse md:flex-row md:space-x-[20rem]">
                     <div class="h-auto md:h-[25rem] w-[90%] md:w-[25rem] bg-black rounded-2xl shadow-lg md:mt-0 mt-6"></div>
@@ -127,12 +127,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
 
         <script>
             <?php include_once __DIR__ . '/index.js'; ?>
