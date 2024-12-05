@@ -99,8 +99,6 @@
                         <a href="./spiegelspel.php">Lees meer</a>
                     </div>
                 </div>
-
-
             </div>
 
             <!-- Over onze Dienstregeling -->
@@ -121,21 +119,19 @@
             </div>
 
             <!-- Contact Section -->
-            <div class="snap-center h-screen flex flex-col md:flex-row md:space-x-[20rem] items-center justify-center px-4 py-[5rem]c md:py-0 md:px-0">
+            <div class="snap-center h-screen flex flex-col md:flex-row md:space-x-[20rem] items-center justify-center px-4 py-[5rem] md:py-0 md:px-0">
 
                 <div class="h-[15rem] w-full md:w-[25rem] bg-black rounded-2xl shadow-lg mt-auto md:mt-0 mx-auto flex items-center justify-center">
 
                 </div>
                 <div class="h-auto w-full md:w-[25rem] px-4 md:px-0 flex flex-col">
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2">Contacteer ons</h2>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2">Contact</h2>
                     <p class="mt-6 md:mt-[5rem] text-lg md:text-xl">
-                        Lorem ipsum dolor sitt, consectetur adipisicing elit. Exercitationem excepturi asperiores ratione nemo quae animi, pariatur quas soluta, praesentium necessitatibus deserunt ducimus maiores autem quaerat magnam dolorum molestiae? Reiciendis, quam.
-                    </p>
+                        Met het Spiegelconcept geeft u invulling aan een lerende organisatie. Met deze aanpak spiegel je je als professional, team en organisatie systematisch aan de hoogste kwaliteitsstandaarden en de behoeften vanuit je omgeving. Je gebruikt de leerpunten die hieruit naar voren komen om je dienstverlening te ontwikkelen. </p>
                     <div class="bg-db text-white text-center px-4 py-2 rounded hover:bg-blue-600 mt-10 w-[8rem] mx-auto md:mx-0">
                         <a href="./contact.php">Lees meer</a>
                     </div>
                 </div>
-
             </div>
 
 
