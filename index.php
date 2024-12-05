@@ -70,26 +70,26 @@
 
         <div class="flex flex-col items-center space-y-[5rem] my-[15rem]">
 
-        
+
             <!-- Focus6 Section -->
             <div class="snap-center h-screen flex flex-col md:flex-row md:space-x-[20rem] items-center justify-center px-4 py-[5rem] md:py-0 md:px-0">
-                <!-- Text Section -->
+
                 <div class="h-auto w-full md:w-[25rem] px-4 md:px-0 flex flex-col">
                     <h2 class="text-3xl md:text-5xl font-bold mt-2">Focus6</h2>
                     <p class="mt-6 md:mt-[5rem] text-lg md:text-xl">
                         Focus6 biedt met haar Spiegelconcept een verfrissende en activerende aanpak om te werken aan de ontwikkeling van de lerende organisatie. Het concept is in te zetten op teamniveau en snel op te schalen naar organisatieniveau. Alles is in de praktijk ontwikkeld en toegepast. We geloven in de kracht van teams. In onze optiek onderscheidt een team zich als het goed samenwerkt, leert van ervaringen en innoveert om steeds beter te presteren.</p>
                 </div>
-                <!-- Black Box -->
+
                 <div class="h-[15rem] w-full md:w-[25rem] bg-black rounded-2xl shadow-lg mt-auto md:mt-0 mx-auto flex items-center justify-center">
-                    <!-- Optional Content Inside the Box -->
+
                 </div>
             </div>
 
             <!-- Spiegelspel Section -->
             <div class="snap-center h-screen flex flex-col md:flex-row md:space-x-[20rem] items-center justify-center px-4 py-[5rem] md:py-0 md:px-0">
-                <!-- Text Section -->
+
                 <div class="h-[15rem] w-full md:w-[25rem] bg-black rounded-2xl shadow-lg mt-auto md:mt-0 mx-auto flex items-center justify-center">
-                    <!-- Optional Content Inside the Box -->
+
                 </div>
                 <div class="h-auto w-full md:w-[25rem] px-4 md:px-0 flex flex-col">
                     <h2 class="text-3xl md:text-5xl font-bold mt-2">Over het Spiegelspel</h2>
@@ -99,13 +99,13 @@
                         <a href="./spiegelspel.php">Lees meer</a>
                     </div>
                 </div>
-                <!-- Black Box -->
+
 
             </div>
 
             <!-- Over onze Dienstregeling -->
             <div class="snap-center h-screen flex flex-col md:flex-row md:space-x-[20rem] items-center justify-center px-4 py-[5rem] md:py-0 md:px-0">
-                <!-- Text Section -->
+
                 <div class="h-auto w-full md:w-[25rem] px-4 md:px-0 flex flex-col">
                     <h2 class="text-3xl md:text-5xl font-bold mt-2">Over onze Dienstregeling</h2>
                     <p class="mt-6 md:mt-[5rem] text-lg md:text-xl">
@@ -115,17 +115,16 @@
                         <a href="./dienst.php">Lees meer</a>
                     </div>
                 </div>
-                <!-- Black Box -->
                 <div class="h-[15rem] w-full md:w-[25rem] bg-black rounded-2xl shadow-lg mt-auto md:mt-0 mx-auto flex items-center justify-center">
-                    <!-- Optional Content Inside the Box -->
+
                 </div>
             </div>
 
             <!-- Contact Section -->
             <div class="snap-center h-screen flex flex-col md:flex-row md:space-x-[20rem] items-center justify-center px-4 py-[5rem]c md:py-0 md:px-0">
-                <!-- Text Section -->
+
                 <div class="h-[15rem] w-full md:w-[25rem] bg-black rounded-2xl shadow-lg mt-auto md:mt-0 mx-auto flex items-center justify-center">
-                    <!-- Optional Content Inside the Box -->
+
                 </div>
                 <div class="h-auto w-full md:w-[25rem] px-4 md:px-0 flex flex-col">
                     <h2 class="text-3xl md:text-5xl font-bold mt-2">Contacteer ons</h2>
@@ -136,7 +135,6 @@
                         <a href="./contact.php">Lees meer</a>
                     </div>
                 </div>
-                <!-- Black Box -->
 
             </div>
 
