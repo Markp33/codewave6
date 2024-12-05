@@ -51,7 +51,7 @@
     </div>
 
     <div class="text-center mt-8 text-gray-500 py-6">
-        <p>&copy; 2024 Spiegespel. Alle rechten voorbehouden.</p>
+        <p>&copy; 2024 Spiegelspel. Alle rechten voorbehouden.</p>
     </div>
     </div>
 

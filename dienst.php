@@ -1,6 +1,6 @@
 <?php include_once __DIR__ . '/header.php'; ?>
-<?php //include_once 'header.php'; ?>
-<?php //include_once __DIR__ . '/footer.php'; ?>
+<?php //include_once 'header.php'; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,37 +11,35 @@
     <link href="./src/output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-    body {
-        position: relative;
-    }
+        body {
+            position: relative;
+        }
 
-    header {}
+        .container {
+            position: relative;
+            z-index: 1;
+        }
 
-    .container {
-        position: relative;
-        z-index: 1;
-    }
+        .box {
+            z-index: 1;
+        }
 
-    .box {
-        z-index: 1;
-    }
+        #myModal {
+            z-index: 50;
+        }
 
-    #myModal {
-        z-index: 50;
-    }
+        .modal {
+            display: none;
+            /* Start hidden */
+        }
 
-    .modal {
-        display: none;
-        /* Start hidden */
-    }
+        .modal.hidden {
+            display: none;
+        }
 
-    .modal.hidden {
-        display: none;
-    }
-
-    .modal.visible {
-        display: block;
-    }
+        .modal.visible {
+            display: block;
+        }
     </style>
 </head>
 
@@ -105,32 +103,34 @@
     </div>
 
     <script>
-    function openModal(imageSrc, text) {
-        console.log("open")
-        console.log(imageSrc)
-        document.getElementById("modalText").innerText = text;
-        document.getElementById("modalImage").src = imageSrc;
-        const modal = document.getElementById("myModal");
-        modal.classList.remove("hidden");
-        modal.classList.add("visible");
-    }
-
-    function closeModal() {
-        console.log("close")
-        const modal = document.getElementById("myModal");
-        modal.classList.remove("visible");
-        modal.classList.add("hidden");
-    }
-
-    // Close the modal when clicking outside of it
-    window.onclick = function(event) {
-        console.log("onclick")
-        const modal = document.getElementById("myModal");
-        if (event.target == modal) {
-            closeModal();
+        function openModal(imageSrc, text) {
+            console.log("open")
+            console.log(imageSrc)
+            document.getElementById("modalText").innerText = text;
+            document.getElementById("modalImage").src = imageSrc;
+            const modal = document.getElementById("myModal");
+            modal.classList.remove("hidden");
+            modal.classList.add("visible");
         }
-    };
+
+        function closeModal() {
+            console.log("close")
+            const modal = document.getElementById("myModal");
+            modal.classList.remove("visible");
+            modal.classList.add("hidden");
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            console.log("onclick")
+            const modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                closeModal();
+            }
+        };
     </script>
 </body>
+
+<?php include_once 'footer.php'; ?>
 
 </html>

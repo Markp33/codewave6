@@ -5,6 +5,8 @@
     <link href=" spiegelspel.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
+
 <div id="fullpage">
     <!-- Spiegelconcept Section -->
 
@@ -161,7 +163,3 @@
     </div>
     <script src="spiegelspel.js"></script>
 </div>
-
-<?php include_once 'footer.php'; ?>
-
-</body>

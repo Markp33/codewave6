@@ -81,7 +81,7 @@
                 </div>
 
                 <div class="h-[15rem] w-full md:w-[25rem] bg-black rounded-2xl shadow-lg mt-auto md:mt-0 mx-auto flex items-center justify-center">
-
+                    <img href="">
                 </div>
             </div>
 

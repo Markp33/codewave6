@@ -50,5 +50,7 @@
 
 
     <script>
-        <?php include_once __DIR__ . '/index.php'; ?>
+        <?php include_once __DIR__ . '/header.js'; ?>
     </script>
+
+
