@@ -1,4 +1,4 @@
-<?php include_once __DIR__ . '/header.php'; ?>
+<?php include_once __DIR__ . '/components/header.php'; ?>
 
 <head>
     <link href="./src/output.css" rel="stylesheet">
@@ -163,4 +163,4 @@
     </div>
     <script src="spiegelspel.js"></script>
 </div>
-<?php include_once 'footer.php'; ?>
+<?php include_once __DIR__ . '/components/footer.php'; ?>

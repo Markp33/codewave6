@@ -1,8 +1,5 @@
-<?php include_once __DIR__ . '/header.php'; ?>
-<?php //include_once 'header.php'; 
-?>
-<!DOCTYPE html>
-<html lang="en">
+<?php include_once __DIR__ . '/components/header.php'; ?>
+
 
 <head>
     <meta charset="UTF-8">
@@ -129,8 +126,5 @@
             }
         };
     </script>
-</body>
 
-<?php include_once 'footer.php'; ?>
-
-</html>
+<?php include_once __DIR__ . '/components/footer.php'; ?>

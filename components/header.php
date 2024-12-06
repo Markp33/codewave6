@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Responsive Menu</title>
+    <title>Focus6</title>
 </head>
 
 <body class="flex flex-col min-h-screen font-body">
 
-    <header class="bg-white rounded-full top-4 mx-8 fixed left-0 right-0 z-50">
+    <header class="bg-white rounded-full border-2 border-blue top-4 mx-8 fixed left-0 right-0 z-50">
+
         <div class="container mx-auto flex items-center justify-between p-4 md:justify-between">
 
             <a href="index.php" class="flex-shrink-0 mx-auto md:mx-0 md:ml-10">
@@ -52,5 +53,3 @@
     <script>
         <?php include_once __DIR__ . '/header.js'; ?>
     </script>
-
-
