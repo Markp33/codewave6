@@ -1,27 +1,23 @@
-<<<<<<< HEAD
-<?php include_once __DIR__ . '/components/header.php'; ?>
-=======
 <?php
 include_once __DIR__ . '/components/header.php';
 include './src/database/connect.php';
 
-$username = "u220712_focus6";
-$password = "SLNUAfScHEMPf3exufw4";
-$dbname = "u220712_focus6";
-$servername = "localhost";
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // echo "connection successfull";
-} catch (PDOException $e) {
-    echo "Error: " . $e->getMessage();
-    echo json_encode('[{"name":"error","msg":"' . $e->getMessage() . '"}]');
-}
+// $username = "u220712_focus6";
+// $password = "SLNUAfScHEMPf3exufw4";
+// $dbname = "u220712_focus6";
+// $servername = "localhost";
+// try {
+//     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+//     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//     // echo "connection successfull";
+// } catch (PDOException $e) {
+//     echo "Error: " . $e->getMessage();
+//     echo json_encode('[{"name":"error","msg":"' . $e->getMessage() . '"}]');
+// }
 $stmt = $conn->prepare("SELECT * FROM cms WHERE page = 'spiegelspel'");
 $stmt->execute();
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
->>>>>>> spiegelspelconcept-php
 
 <head>
     <link href="./src/output.css" rel="stylesheet">
@@ -197,11 +193,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
     <script src="spiegelspel.js"></script>
 </div>
-<<<<<<< HEAD
-<?php include_once __DIR__ . '/components/footer.php'; ?>
-=======
 
-<?php include_once '/components/footer.php'; ?>
+<?php include_once __DIR__ . '/components/footer.php'; ?>
 
 </body>
->>>>>>> spiegelspelconcept-php

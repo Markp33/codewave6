@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-<?php include_once __DIR__ . '/components/header.php'; ?>
-=======
 <?php include_once __DIR__ . '/components/header.php';
 include "./src/database/connect.php";
 $stmt = $conn->prepare("SELECT * FROM cms WHERE page = 'home'");
 $stmt->execute();
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
->>>>>>> spiegelspelconcept-php
 
 <head>
     <meta charset="UTF-8">
@@ -90,11 +86,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </div>
 
                 <div class="h-[15rem] w-full md:w-[25rem] bg-black rounded-2xl shadow-lg mt-auto md:mt-0 mx-auto flex items-center justify-center">
-<<<<<<< HEAD
-                    <img href="">
-=======
                     <img src="<?= $result[0]["image"]?>" href="">
->>>>>>> spiegelspelconcept-php
                 </div>
             </div>
 
@@ -102,11 +94,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="snap-center h-screen flex flex-col md:flex-row md:space-x-[20rem] items-center justify-center px-4 py-[5rem] md:py-0 md:px-0">
 
                 <div class="h-[15rem] w-full md:w-[25rem] bg-black rounded-2xl shadow-lg mt-auto md:mt-0 mx-auto flex items-center justify-center">
-<<<<<<< HEAD
-
-=======
                     <img src="<?= $result[1]["image"]?>" href="">
->>>>>>> spiegelspelconcept-php
                 </div>
                 <div class="h-auto w-full md:w-[25rem] px-4 md:px-0 flex flex-col">
                     <h2 class="text-3xl md:text-5xl font-bold mt-2">Over het Spiegelspel</h2>
@@ -131,11 +119,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                 </div>
                 <div class="h-[15rem] w-full md:w-[25rem] bg-black rounded-2xl shadow-lg mt-auto md:mt-0 mx-auto flex items-center justify-center">
-<<<<<<< HEAD
-
-=======
                     <img src="<?= $result[2]["image"]?>" href="">
->>>>>>> spiegelspelconcept-php
                 </div>
             </div>
 
@@ -143,11 +127,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="snap-center h-screen flex flex-col md:flex-row md:space-x-[20rem] items-center justify-center px-4 py-[5rem] md:py-0 md:px-0">
 
                 <div class="h-[15rem] w-full md:w-[25rem] bg-black rounded-2xl shadow-lg mt-auto md:mt-0 mx-auto flex items-center justify-center">
-<<<<<<< HEAD
-
-=======
                     <img src="<?= $result[0]["image"]?>" href="">
->>>>>>> spiegelspelconcept-php
                 </div>
                 <div class="h-auto w-full md:w-[25rem] px-4 md:px-0 flex flex-col">
                     <h2 class="text-3xl md:text-5xl font-bold mt-2">Contact</h2>

@@ -1,14 +1,10 @@
 <?php include_once __DIR__ . '/components/header.php'; ?>
-<<<<<<< HEAD
-
-=======
 <?php //include_once 'header.php'; 
 ?>
 <?php //include_once __DIR__ . '/footer.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
->>>>>>> spiegelspelconcept-php
 
 <head>
     <meta charset="UTF-8">
@@ -20,11 +16,8 @@
         body {
             position: relative;
         }
-<<<<<<< HEAD
-=======
 
         header {}
->>>>>>> spiegelspelconcept-php
 
         .container {
             position: relative;
@@ -147,14 +140,9 @@
             }
         };
     </script>
-<<<<<<< HEAD
-
-<?php include_once __DIR__ . '/components/footer.php'; ?>
-=======
     <?php
     include_once __DIR__ . '/components/footer.php';
     ?>
 </body>
 
 </html>
->>>>>>> spiegelspelconcept-php
