@@ -1,3 +1,9 @@
+<?php
+include "./src/database/connect.php";
+$stmt = $conn->prepare("SELECT * FROM cms WHERE page = 'other'");
+$stmt->execute();
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +20,7 @@
         <div class="container mx-auto flex items-center justify-between p-4">
 
             <a href="index.php" class="flex-shrink-0">
-                <img class="h-10" src="" alt="Logo">
+                <img class="h-10" src="<?= $result[0]["image"] ?>" alt="Logo">
             </a>
 
             <button id="menuButton" class="block md:hidden focus:outline-none">

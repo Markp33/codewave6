@@ -1,8 +1,14 @@
+<?php
+include "./src/database/connect.php";
+$stmt = $conn->prepare("SELECT * FROM cms WHERE page = 'other'");
+$stmt->execute();
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
 <footer class="bg-black text-white rounded-t-3xl snap-always snap-center font-body">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0 py-24">
 
         <a href="index.php" class="flex-shrink-0">
-            <img class="h-10" src="" alt="Logo">
+            <img class="h-10" src="<?= $result[0]["image"]?>" alt="Logo">
         </a>
 
         <div class="w-full md:w-1/3">
