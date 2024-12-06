@@ -12,6 +12,7 @@
 <?php
 if (isset($_POST["page"])){
     $_SESSION['page'] = $_POST['page'];
+    // echo $_POST["page"];
     include "./../../database/connect.php";
     $stmt = $conn->prepare("SELECT * FROM `cms` WHERE `page` = :page_chosen");
     $stmt->bindParam(':page_chosen', $_POST['page'], PDO::PARAM_STR);

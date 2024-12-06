@@ -5,6 +5,7 @@
         <option value="home">Home Page</option>
         <option value="spiegelspel">Spiegel Spel</option>
         <option value="dienstverleening">Dienst Verleening</option>
+        <option value="other">Other</option>
     </select><br>
     Paragraph Number: <input type="text" name="paragraph" required><br>
     Text:<br>
@@ -22,8 +23,9 @@ if (isset($_POST["page"])) {
     include "./../../database/connect.php";
     $page = $_POST["page"];
     $paragraph = $_POST["paragraph"];
-    $stmt = $conn->prepare("SET GLOBAL max_allowed_packet=67108864");
-    $stmt->execute();
+    // $stmt = $conn->prepare("SET GLOBAL max_allowed_packet=67108864");
+    // $stmt->execute();
+    // 
     $stmt = $conn->prepare("SELECT * FROM `cms` WHERE `page` = '$page' AND `paragraph` = '$paragraph'");
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);

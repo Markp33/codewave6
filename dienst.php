@@ -1,5 +1,14 @@
 <?php include_once __DIR__ . '/components/header.php'; ?>
+<<<<<<< HEAD
 
+=======
+<?php //include_once 'header.php'; 
+?>
+<?php //include_once __DIR__ . '/footer.php'; 
+?>
+<!DOCTYPE html>
+<html lang="en">
+>>>>>>> spiegelspelconcept-php
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +20,11 @@
         body {
             position: relative;
         }
+<<<<<<< HEAD
+=======
+
+        header {}
+>>>>>>> spiegelspelconcept-php
 
         .container {
             position: relative;
@@ -43,6 +57,9 @@
 <body class="bg-gray-100">
     <div class="container mx-auto p-4 py-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <?php
+        ini_set('display_errors', '1');
+        ini_set('display_startup_errors', '1');
+        error_reporting(E_ALL);
         $divs = [
             [
                 'text' => 'Teamkompas. Door samen de bedoeling en de leidende principes te bepalen geven we uw team het kompas voor de toekomst',
@@ -81,11 +98,15 @@
                 'img' => 'https://via.placeholder.com/150'
             ]
         ];
-
-        foreach ($divs as $div) {
-            echo '<div class="box border border-gray-300 p-4 shadow-md rounded-lg cursor-pointer hover:shadow-lg transform hover:scale-105 transition-all duration-300" onclick="openModal(\'' . htmlspecialchars($div['img']) . '\', \'' . htmlspecialchars($div['text']) . '\')">';
-            echo '<p class="text-center mb-2">' . htmlspecialchars($div['text']) . '</p>';
-            echo '<img class="mx-auto" src="' . htmlspecialchars($div['img']) . '" alt="Image">';
+        include "src/database/connect.php";
+        $stmt = $conn->prepare("SELECT * FROM `cms` WHERE `page` = 'dienstverleening'");
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        // echo "<pre>"; print_r($result); echo "</pre>";
+        foreach ($result as $result) {
+            echo '<div class="box border border-gray-300 p-4 shadow-md rounded-lg cursor-pointer hover:shadow-lg transform hover:scale-105 transition-all duration-300" onclick="openModal(\'' . $result["image"] . '\', \'' . $result["text"] . '\')">';
+            echo '<p class="text-center mb-2">' . $result['text'] . '</p>';
+            echo '<img class="mx-auto" src="' . $result['image'] . '" alt="Image">';
             echo '</div>';
         }
         ?>
@@ -126,5 +147,14 @@
             }
         };
     </script>
+<<<<<<< HEAD
 
 <?php include_once __DIR__ . '/components/footer.php'; ?>
+=======
+    <?php
+    include_once __DIR__ . '/components/footer.php';
+    ?>
+</body>
+
+</html>
+>>>>>>> spiegelspelconcept-php

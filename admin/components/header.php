@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-=======
-<?php
-include "./src/database/connect.php";
-$stmt = $conn->prepare("SELECT * FROM cms WHERE page = 'other'");
-$stmt->execute();
-$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-?>
->>>>>>> spiegelspelconcept-php
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,11 +15,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="container mx-auto flex items-center justify-between p-4 md:justify-between">
 
             <a href="index.php" class="flex-shrink-0 mx-auto md:mx-0 md:ml-10">
-<<<<<<< HEAD
                 <img class="h-10" src="Logo.png" alt="Logo">
-=======
-                <img class="h-10" src="<?= $result[0]["image"]?>" alt="Logo">
->>>>>>> spiegelspelconcept-php
             </a>
 
             <button id="menuButton" class="block md:hidden focus:outline-none absolute right-4 top-4">
