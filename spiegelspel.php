@@ -163,3 +163,4 @@
     </div>
     <script src="spiegelspel.js"></script>
 </div>
+<?php include_once 'footer.php'; ?>
