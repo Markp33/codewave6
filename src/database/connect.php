@@ -1,7 +1,4 @@
 <?php
-    // $username = "u220712_focus6";
-    // $password = "SLNUAfScHEMPf3exufw4";
-    // $dbname = "u220712_focus6";
     $username = "root";
     $password = "root";
     $dbname = "focus6";
